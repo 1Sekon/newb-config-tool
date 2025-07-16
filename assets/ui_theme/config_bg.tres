@@ -1,0 +1,14 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c6v1rs5naqysl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kinv2"]
+bg_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+border_width_top = 3
+border_width_bottom = 3
+border_color = Color(0.148438, 0.148438, 0.148438, 1)
+expand_margin_left = 190.0
+expand_margin_top = 4.0
+expand_margin_right = 40.0
+expand_margin_bottom = 14.0
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_kinv2")

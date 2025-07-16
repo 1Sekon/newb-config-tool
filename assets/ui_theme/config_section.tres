@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://bnq0tqe8aroh0"]
+
+[ext_resource type="FontFile" uid="uid://b2gxyam1y0yd0" path="res://assets/fonts/lexendDeca/LexendDeca-Medium.ttf" id="1_envlf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6n26"]
+content_margin_bottom = 4.0
+bg_color = Color(0.257812, 0.257812, 0.257812, 1)
+draw_center = false
+border_width_top = 3
+border_color = Color(0.207031, 0.207031, 0.207031, 1)
+expand_margin_left = 20.0
+expand_margin_right = 20.0
+
+[resource]
+Label/colors/font_color = Color(0.215686, 0.717647, 0.529412, 1)
+Label/font_sizes/font_size = 25
+Label/fonts/font = ExtResource("1_envlf")
+Label/styles/normal = SubResource("StyleBoxFlat_f6n26")

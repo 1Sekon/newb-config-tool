@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbr17a0nvg1c7"]
+
+[ext_resource type="ArrayMesh" uid="uid://dxlg37c6r7we5" path="res://assets/models/Dirt.obj" id="1_40d7h"]
+[ext_resource type="ArrayMesh" uid="uid://bwcxy6xhu3fwg" path="res://assets/models/GrassBlock.obj" id="2_f4mox"]
+[ext_resource type="ArrayMesh" uid="uid://t3o56bo3hjde" path="res://assets/models/OakLog.obj" id="3_7tsqc"]
+[ext_resource type="ArrayMesh" uid="uid://mhgsicfnqeog" path="res://assets/models/Sand.obj" id="4_w3hsy"]
+[ext_resource type="ArrayMesh" uid="uid://c7yk70ojgpios" path="res://assets/models/shortgrass.obj" id="5_umnl7"]
+[ext_resource type="ArrayMesh" uid="uid://4dbe8388f0so" path="res://assets/models/tallgrass.obj" id="6_fpqv3"]
+[ext_resource type="ArrayMesh" uid="uid://dgq5mcjsmwm0d" path="res://assets/models/Stone.obj" id="7_4ooy3"]
+
+[node name="Mesh" type="Node3D"]
+
+[node name="Dirt" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_40d7h")
+
+[node name="GrassBlock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_f4mox")
+
+[node name="OakLog" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("3_7tsqc")
+skeleton = NodePath("../GrassBlock")
+
+[node name="Sand" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+mesh = ExtResource("4_w3hsy")
+skeleton = NodePath("../OakLog")
+
+[node name="ShortGrass" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("5_umnl7")
+
+[node name="TallGrass" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+mesh = ExtResource("6_fpqv3")
+
+[node name="Stone" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("7_4ooy3")

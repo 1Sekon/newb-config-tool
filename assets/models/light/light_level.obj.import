@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cchp6elkcgoil"
+path="res://.godot/imported/light_level.obj-fd9fbc29d3c3853fb7b8f40011194ed7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/light_level.obj-fd9fbc29d3c3853fb7b8f40011194ed7.mesh"]
+
+source_file="res://assets/models/light/light_level.obj"
+dest_files=["res://.godot/imported/light_level.obj-fd9fbc29d3c3853fb7b8f40011194ed7.mesh", "res://.godot/imported/light_level.obj-fd9fbc29d3c3853fb7b8f40011194ed7.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

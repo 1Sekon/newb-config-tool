@@ -1,0 +1,1589 @@
+[gd_scene load_steps=69 format=3 uid="uid://bk2rqli0pgv50"]
+
+[ext_resource type="Script" uid="uid://bvi0jbv78so1i" path="res://assets/scripts/config_global/color_correction_global.gd" id="1_1tvua"]
+[ext_resource type="Script" uid="uid://bcnblaslwrpit" path="res://assets/scripts/ui_main.gd" id="1_4uhkp"]
+[ext_resource type="Texture2D" uid="uid://bksk8hb43cx8s" path="res://assets/textures/ui/icons/wrench.svg" id="2_a67i8"]
+[ext_resource type="Theme" uid="uid://dlg40arksvk7g" path="res://assets/ui_theme/mainUI.tres" id="2_f6n26"]
+[ext_resource type="Theme" uid="uid://bnq0tqe8aroh0" path="res://assets/ui_theme/config_section.tres" id="3_f43jd"]
+[ext_resource type="Texture2D" uid="uid://cib4jmwebfkih" path="res://assets/textures/ui/icons/filter.svg" id="4_4uhkp"]
+[ext_resource type="Texture2D" uid="uid://bltcbm5bmia1x" path="res://assets/textures/ui/icons/save.svg" id="4_7a7ve"]
+[ext_resource type="Script" uid="uid://fwgbl51vg6jh" path="res://assets/scripts/config_global/terrain_lighting_global.gd" id="4_j611y"]
+[ext_resource type="Theme" uid="uid://c6v1rs5naqysl" path="res://assets/ui_theme/config_bg.tres" id="4_ox3b3"]
+[ext_resource type="Script" uid="uid://cc1rgl0y80j1f" path="res://assets/scripts/save_config.gd" id="6_0b578"]
+[ext_resource type="FontFile" uid="uid://cklak6rfbagdk" path="res://assets/fonts/lexendDeca/LexendDeca-Regular.ttf" id="6_pp1ix"]
+[ext_resource type="Texture2D" uid="uid://d3qqh5dgmcjoa" path="res://assets/textures/ui/icons/import_file.svg" id="7_f43jd"]
+[ext_resource type="FontFile" uid="uid://b1oefflj30fm8" path="res://assets/fonts/lexendDeca/LexendDeca-SemiBold.ttf" id="9_rtc4f"]
+[ext_resource type="Script" uid="uid://b0e4pro7ovqpc" path="res://assets/scripts/config_global/sky_color_global.gd" id="10_rgx58"]
+[ext_resource type="Texture2D" uid="uid://wwjd1s7c5rck" path="res://assets/textures/ui/icons/chevron_right.svg" id="10_rtc4f"]
+[ext_resource type="Script" uid="uid://bdaso3eo8fd4j" path="res://assets/scripts/config_global/fog_global.gd" id="11_4uhkp"]
+[ext_resource type="Texture2D" uid="uid://cnqy4ijovpii6" path="res://assets/textures/ui/icons/chevron_left.svg" id="12_l068f"]
+[ext_resource type="Script" uid="uid://dtxyfn7x2wcj0" path="res://assets/scripts/import_config.gd" id="13_awpjw"]
+[ext_resource type="Script" uid="uid://bx2o3qfhu4v41" path="res://assets/scripts/config_global/wave_global.gd" id="13_l068f"]
+[ext_resource type="Texture2D" uid="uid://hcn3bnxwgk8d" path="res://assets/textures/ui/icons/export.svg" id="15_4uw20"]
+[ext_resource type="Texture2D" uid="uid://8n5t5xplk638" path="res://assets/textures/ui/icons/settings.svg" id="15_540xx"]
+[ext_resource type="Texture2D" uid="uid://c3atj1hstihl8" path="res://assets/textures/ui/icons/ui_off.svg" id="15_entok"]
+[ext_resource type="Texture2D" uid="uid://dfi17dtvka1b4" path="res://assets/textures/ui/icons/ui_on.svg" id="15_pp1ix"]
+[ext_resource type="Texture2D" uid="uid://by23bc2pkfmrf" path="res://assets/textures/ui/icons/menu.svg" id="15_r1hkk"]
+[ext_resource type="Texture2D" uid="uid://mtqq471lwpvf" path="res://assets/textures/ui/icons/cross.svg" id="16_j172u"]
+[ext_resource type="Theme" uid="uid://cx5mlmkpjqq8r" path="res://assets/ui_theme/window.tres" id="18_ftut5"]
+[ext_resource type="Texture2D" uid="uid://duha66lh8i8rk" path="res://assets/textures/ui/icons/scene2.svg" id="19_a67i8"]
+[ext_resource type="Script" uid="uid://du7myak0prpq0" path="res://assets/scripts/export_config.gd" id="20_vncxl"]
+[ext_resource type="Script" uid="uid://dsgnetswdxoft" path="res://assets/scripts/ui/animation.gd" id="23_l068f"]
+[ext_resource type="Texture2D" uid="uid://bq567ct5nay8l" path="res://assets/textures/ui/icons/3d.svg" id="26_vncxl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgipk"]
+content_margin_left = 10.0
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.21875, 0.21875, 0.21875, 1)
+expand_margin_left = 190.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vncxl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1623r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lomqx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cnnpd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t2jln"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8geb5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xulvo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qbtp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uka57"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pwvdh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j3ogp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vncxl"]
+content_margin_top = 37.0
+bg_color = Color(0.113281, 0.113281, 0.113281, 1)
+border_width_right = 3
+border_color = Color(0.172549, 0.172549, 0.172549, 1)
+expand_margin_left = 150.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d2ffj"]
+content_margin_left = 40.0
+content_margin_top = 20.0
+content_margin_right = 40.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_entok"]
+draw_center = false
+border_width_bottom = 2
+border_color = Color(0.753906, 0.753906, 0.753906, 1)
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awpjw"]
+draw_center = false
+border_width_bottom = 2
+border_color = Color(0.753906, 0.753906, 0.753906, 1)
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgx58"]
+draw_center = false
+border_width_bottom = 2
+border_color = Color(0.753906, 0.753906, 0.753906, 1)
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1hkk"]
+draw_center = false
+border_width_bottom = 2
+border_color = Color(0.753906, 0.753906, 0.753906, 1)
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2ffj"]
+content_margin_left = 10.0
+bg_color = Color(0.113725, 0.113725, 0.113725, 1)
+border_width_left = 3
+border_width_bottom = 3
+border_color = Color(0.21875, 0.21875, 0.21875, 1)
+expand_margin_right = 190.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_540xx"]
+content_margin_top = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.0976562, 0.0976562, 0.0976562, 1)
+border_width_left = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.171875, 0.171875, 0.171875, 1)
+expand_margin_left = 3.0
+expand_margin_right = 190.0
+shadow_color = Color(0, 0, 0, 0.146)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uw20"]
+bg_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+border_width_top = 3
+border_width_bottom = 3
+border_color = Color(0.148438, 0.148438, 0.148438, 1)
+expand_margin_left = 3.0
+expand_margin_top = 10.0
+expand_margin_right = 190.0
+expand_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uhkp"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l068f"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ydv0"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.0921631, 0.589844, 0.251576, 1)
+expand_margin_left = 3.0
+expand_margin_top = 10.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1i6g0"]
+bg_color = Color(0.0980392, 0.0980392, 0.0980392, 1)
+border_width_top = 3
+border_width_bottom = 3
+border_color = Color(0.148438, 0.148438, 0.148438, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 14.0
+
+[sub_resource type="Curve" id="Curve_1i6g0"]
+_data = [Vector2(0, 0.258427), 0.0, 0.0, 0, 0]
+point_count = 1
+
+[sub_resource type="CurveTexture" id="CurveTexture_cam3k"]
+curve = SubResource("Curve_1i6g0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_entok"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ftut5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_awpjw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rgx58"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r1hkk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j172u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_540xx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jwubb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4uw20"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sgipk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1i6g0"]
+
+[node name="Margin" type="MarginContainer" node_paths=PackedStringArray("menu_content", "button_strip", "menu_panel", "config_main")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4uhkp")
+menu_content = NodePath("Content/Menu/Content")
+button_strip = NodePath("Content/Menu/StripeMenu")
+menu_panel = NodePath("Content/Menu/MenuPanel")
+config_main = NodePath("Content/Config")
+
+[node name="Content" type="Control" parent="."]
+layout_mode = 2
+
+[node name="Config" type="Control" parent="Content"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Panel" type="PanelContainer" parent="Content/Config"]
+z_index = 10
+layout_mode = 0
+offset_right = 515.8
+offset_bottom = 47.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sgipk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Content/Config/Panel"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 5
+
+[node name="Icon" type="TextureRect" parent="Content/Config/Panel/HBoxContainer"]
+texture_filter = 2
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_a67i8")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("9_rtc4f")
+theme_override_font_sizes/font_size = 31
+text = "Configs"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Content/Config/Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 302
+
+[node name="FilterConfig" type="Button" parent="Content/Config/Panel/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/icon_max_width = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vncxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_1623r")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_lomqx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cnnpd")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_t2jln")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8geb5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xulvo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_0qbtp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uka57")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pwvdh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j3ogp")
+icon = ExtResource("4_4uhkp")
+
+[node name="Container" type="PanelContainer" parent="Content/Config"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.797
+offset_right = 408.0
+grow_vertical = 2
+scale = Vector2(1.255, 1.255)
+theme = ExtResource("2_f6n26")
+theme_override_styles/panel = SubResource("StyleBoxFlat_vncxl")
+
+[node name="Scroll" type="ScrollContainer" parent="Content/Config/Container"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+scroll_deadzone = -355
+
+[node name="ConfigContainer" type="PanelContainer" parent="Content/Config/Container/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_d2ffj")
+
+[node name="Config" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/separation = 40
+
+[node name="ColorCorrection" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme = ExtResource("2_f6n26")
+theme_override_constants/separation = 15
+script = ExtResource("1_1tvua")
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Color Correction"
+horizontal_alignment = 1
+
+[node name="TonemapPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Tonemap" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel"]
+texture_filter = 2
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel/Tonemap"]
+layout_mode = 2
+text = "Tonemap Type"
+
+[node name="TonemapType" type="OptionButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel/Tonemap"]
+layout_mode = 2
+selected = 2
+allow_reselect = true
+item_count = 4
+popup/item_0/text = "Exponential "
+popup/item_0/id = 1
+popup/item_1/text = "Reinhart"
+popup/item_1/id = 2
+popup/item_2/text = "Extended Reinhart"
+popup/item_2/id = 3
+popup/item_3/text = "ACES"
+popup/item_3/id = 4
+
+[node name="GammaPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Gamma" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel/Gamma"]
+layout_mode = 2
+text = "Gamma"
+
+[node name="Gamma" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel/Gamma"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "1.33"
+emoji_menu_enabled = false
+
+[node name="ExposurePanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Exposure" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure"]
+layout_mode = 2
+text = "Exposure"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure"]
+layout_mode = 2
+
+[node name="ExpoToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure/Mod"]
+layout_mode = 2
+
+[node name="Exposure" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.3"
+emoji_menu_enabled = false
+
+[node name="SaturationPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Saturation" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation"]
+layout_mode = 2
+text = "Saturation"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation"]
+layout_mode = 2
+
+[node name="SatToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation/Mod"]
+layout_mode = 2
+
+[node name="Saturation" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.4"
+emoji_menu_enabled = false
+
+[node name="TintPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Tint" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint"]
+layout_mode = 2
+text = "Tint"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint"]
+layout_mode = 2
+
+[node name="TintToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod"]
+layout_mode = 2
+
+[node name="Low" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/Low"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Low"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TintLow" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/Low"]
+layout_mode = 2
+text = "High"
+color = Color(0.3, 0.5, 1.4, 1)
+edit_alpha = false
+
+[node name="High" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/High"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "High"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TintHigh" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/High"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(1.4, 0.7, 0.3, 1)
+edit_alpha = false
+
+[node name="TerrainLighting" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme_override_constants/separation = 15
+script = ExtResource("4_j611y")
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Terrain Lighting"
+horizontal_alignment = 1
+
+[node name="SunIntensityPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="SunIntensity" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/SunIntensityPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/SunIntensityPanel/SunIntensity"]
+layout_mode = 2
+text = "Sun Intensity"
+
+[node name="SunIntensity" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/SunIntensityPanel/SunIntensity"]
+layout_mode = 2
+text = "2.95"
+emoji_menu_enabled = false
+
+[node name="TorchIntensityPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+visible = false
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="TorchIntensity" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/TorchIntensityPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/TorchIntensityPanel/TorchIntensity"]
+layout_mode = 2
+text = "Torch Intensity"
+
+[node name="TorchIntensity" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/TorchIntensityPanel/TorchIntensity"]
+layout_mode = 2
+text = "1.0"
+emoji_menu_enabled = false
+
+[node name="NightBrightnssPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="NightBrightness" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/NightBrightnssPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/NightBrightnssPanel/NightBrightness"]
+layout_mode = 2
+text = "Night Brightness"
+
+[node name="NightBrightness" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/NightBrightnssPanel/NightBrightness"]
+layout_mode = 2
+text = "0.1"
+emoji_menu_enabled = false
+
+[node name="CaveBrightnessPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+visible = false
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="CaveBrightness" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CaveBrightnessPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CaveBrightnessPanel/CaveBrightness"]
+layout_mode = 2
+text = "Cave Brightness"
+
+[node name="CaveBrightness" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CaveBrightnessPanel/CaveBrightness"]
+layout_mode = 2
+text = "0.1"
+emoji_menu_enabled = false
+
+[node name="ShadowIntensPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+visible = false
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="ShadowIntensity" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/ShadowIntensPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/ShadowIntensPanel/ShadowIntensity"]
+layout_mode = 2
+text = "Shadow Intensity"
+
+[node name="ShadowIntensity" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/ShadowIntensPanel/ShadowIntensity"]
+layout_mode = 2
+text = "0.7"
+emoji_menu_enabled = false
+
+[node name="BlinkingTorchPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+visible = false
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="BlinkingTorch" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/BlinkingTorchPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/BlinkingTorchPanel/BlinkingTorch"]
+layout_mode = 2
+text = "Blinking Torch"
+
+[node name="BlinkTorchToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/BlinkingTorchPanel/BlinkingTorch"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="CloudShadowPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="CloudShadow" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CloudShadowPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CloudShadowPanel/CloudShadow"]
+layout_mode = 2
+text = "Cloud Shadow"
+
+[node name="CloudShadowToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CloudShadowPanel/CloudShadow"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="TerrainColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Terrain Color"
+horizontal_alignment = 1
+
+[node name="TerrainColPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel"]
+layout_mode = 2
+
+[node name="Morning" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Morning"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_awpjw")
+text = "Morning"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TerrColMorning" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Morning"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(1, 0.45, 0.14, 1)
+edit_alpha = false
+
+[node name="Noon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Noon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_rgx58")
+text = "Noon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TerrColNoon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Noon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(1, 0.75, 0.57, 1)
+edit_alpha = false
+
+[node name="Night" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Night"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_r1hkk")
+text = "Night"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TerrColNight" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Night"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.5, 0.64, 1, 1)
+edit_alpha = false
+
+[node name="Fog" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme_override_constants/separation = 15
+script = ExtResource("11_4uhkp")
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Fog"
+horizontal_alignment = 1
+
+[node name="FogBlendPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="FogBlend" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend"]
+layout_mode = 2
+text = "Fog Blend"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend"]
+layout_mode = 2
+
+[node name="FogToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend/Mod"]
+layout_mode = 2
+button_pressed = true
+
+[node name="Fog" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.0"
+emoji_menu_enabled = false
+
+[node name="MistDensPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="MistDensity" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/MistDensPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/MistDensPanel/MistDensity"]
+layout_mode = 2
+text = "Mist Density"
+
+[node name="MistDensity" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/MistDensPanel/MistDensity"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "0.18"
+emoji_menu_enabled = false
+
+[node name="RainMistPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="RainMist" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist"]
+layout_mode = 2
+text = "Rain Mist Opacity"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist"]
+layout_mode = 2
+
+[node name="RainMToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist/Mod"]
+layout_mode = 2
+button_pressed = true
+
+[node name="RainMist" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.12"
+emoji_menu_enabled = false
+
+[node name="CloudyFogPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="CloudyFog" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog"]
+layout_mode = 2
+text = "Cloudy Fog"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog"]
+layout_mode = 2
+
+[node name="CloudyFogToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog/Mod"]
+layout_mode = 2
+button_pressed = true
+
+[node name="CloudyFog" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.1"
+emoji_menu_enabled = false
+
+[node name="SkyColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme_override_constants/separation = 15
+script = ExtResource("10_rgx58")
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Sky Color"
+horizontal_alignment = 1
+
+[node name="DayColorPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="DayColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor"]
+layout_mode = 2
+text = "Day Color"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor"]
+layout_mode = 2
+
+[node name="Zenith" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Zenith"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DayZenith" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0.15, 0.45, 1, 1)
+edit_alpha = false
+
+[node name="Horizon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Horizon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Horizon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DayHorizon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Horizon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.53, 0.83, 0.93, 1)
+edit_alpha = false
+
+[node name="NightColorPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="NightColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor"]
+layout_mode = 2
+text = "Night Color"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor"]
+layout_mode = 2
+
+[node name="Zenith" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Zenith"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NightZenith" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0.004, 0.024, 0.04, 1)
+edit_alpha = false
+
+[node name="Horizon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Horizon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Horizon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NightHorizon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Horizon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.01, 0.06, 0.1, 1)
+edit_alpha = false
+
+[node name="RainColorPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="RainColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor"]
+layout_mode = 2
+text = "Rain Color"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor"]
+layout_mode = 2
+
+[node name="Zenith" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Zenith"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RainZenith" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0.85, 0.9, 1, 1)
+edit_alpha = false
+
+[node name="Horizon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Horizon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Horizon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RainHorizon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Horizon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="EndColorPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="EndColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor"]
+layout_mode = 2
+text = "End Color"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor"]
+layout_mode = 2
+
+[node name="Zenith" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Zenith"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EndZenith" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0.08, 0.01, 0.1, 1)
+edit_alpha = false
+
+[node name="Horizon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Horizon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "Horizon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnHorizon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Horizon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.6, 0.02, 0.6, 1)
+edit_alpha = false
+
+[node name="DawnColorPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="DawnColor" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor"]
+layout_mode = 2
+text = "Dawn Color"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor"]
+layout_mode = 2
+
+[node name="Zenith" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_awpjw")
+text = "Zenith"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DawnZenith" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Zenith"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0.015, 0.045, 0.1, 1)
+edit_alpha = false
+
+[node name="Edge" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Edge"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_rgx58")
+text = "Edge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DawnEdge" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Edge"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(1, 0.4, 0.2, 1)
+edit_alpha = false
+
+[node name="Horizon" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Horizon"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_r1hkk")
+text = "Horizon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DawnHorizon" type="ColorPickerButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Horizon"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.9, 0.3, 0.3, 1)
+edit_alpha = false
+
+[node name="Wave" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config"]
+layout_mode = 2
+theme_override_constants/separation = 15
+script = ExtResource("13_l068f")
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+layout_mode = 2
+theme = ExtResource("3_f43jd")
+text = "Wave Effects"
+horizontal_alignment = 1
+
+[node name="PlantWavePanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="PlantWave" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave"]
+layout_mode = 2
+text = "Plant Wave"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave"]
+layout_mode = 2
+
+[node name="PWaveToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave/Mod"]
+layout_mode = 2
+button_pressed = true
+
+[node name="PlantWave" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.05"
+emoji_menu_enabled = false
+
+[node name="LanternWavePanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="LanternWave" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave"]
+layout_mode = 2
+text = "Lantern Wave"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave"]
+layout_mode = 2
+
+[node name="LWaveToggle" type="CheckButton" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod"]
+layout_mode = 2
+button_pressed = true
+
+[node name="LanternWave" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.16"
+emoji_menu_enabled = false
+
+[node name="WaveSpeedPanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="WaveSpeed" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel/WaveSpeed"]
+layout_mode = 2
+text = "Wave Speed"
+
+[node name="WaveSpeed" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel/WaveSpeed"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "2.8"
+emoji_menu_enabled = false
+
+[node name="CloseConfig" type="TextureButton" parent="Content/Config"]
+modulate = Color(1, 1, 1, 0.505882)
+z_index = 2
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 512.0
+offset_top = -28.0
+offset_right = 547.0
+offset_bottom = 28.0
+grow_vertical = 2
+texture_normal = ExtResource("12_l068f")
+texture_pressed = ExtResource("12_l068f")
+texture_hover = ExtResource("12_l068f")
+texture_disabled = ExtResource("12_l068f")
+texture_focused = ExtResource("12_l068f")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Menu" type="Control" parent="Content"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -46.0
+offset_bottom = 47.0
+grow_horizontal = 0
+
+[node name="StripeMenu" type="TextureButton" parent="Content/Menu"]
+modulate = Color(1, 1, 1, 0.505882)
+z_index = 1
+z_as_relative = false
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+offset_left = -4.0
+offset_right = 40.0
+offset_bottom = 44.0
+size_flags_horizontal = 8
+texture_normal = ExtResource("15_r1hkk")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="MenuPanel" type="PanelContainer" parent="Content/Menu"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -198.0
+offset_bottom = 47.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d2ffj")
+
+[node name="CrossMenu" type="TextureButton" parent="Content/Menu/MenuPanel"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("16_j172u")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Content" type="PanelContainer" parent="Content/Menu"]
+z_index = -5
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -195.0
+offset_top = 47.0
+offset_bottom = 448.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_540xx")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Content/Menu/Content"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="SaveLocalBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4uw20")
+
+[node name="SaveLocal" type="Button" parent="Content/Menu/Content/HBoxContainer/SaveLocalBG" node_paths=PackedStringArray("cc", "tl", "fog", "sc", "wave")]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4uhkp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l068f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6ydv0")
+text = "Save Config"
+icon = ExtResource("4_7a7ve")
+alignment = 0
+script = ExtResource("6_0b578")
+cc = NodePath("../../../../../Config/Container/Scroll/ConfigContainer/Config/ColorCorrection")
+tl = NodePath("../../../../../Config/Container/Scroll/ConfigContainer/Config/TerrainLighting")
+fog = NodePath("../../../../../Config/Container/Scroll/ConfigContainer/Config/Fog")
+sc = NodePath("../../../../../Config/Container/Scroll/ConfigContainer/Config/SkyColor")
+wave = NodePath("../../../../../Config/Container/Scroll/ConfigContainer/Config/Wave")
+
+[node name="ExportBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
+
+[node name="ExportConfig" type="Button" parent="Content/Menu/Content/HBoxContainer/ExportBG" node_paths=PackedStringArray("cnfg")]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+text = "Export Config"
+icon = ExtResource("15_4uw20")
+alignment = 0
+script = ExtResource("20_vncxl")
+cnfg = NodePath("../../SaveLocalBG/SaveLocal")
+
+[node name="ExportConfigWindow" type="FileDialog" parent="Content/Menu/Content/HBoxContainer/ExportBG"]
+auto_translate_mode = 1
+title = "Save Config"
+initial_position = 1
+size = Vector2i(1045, 525)
+content_scale_mode = 1
+content_scale_aspect = 4
+content_scale_factor = 1.47
+theme = ExtResource("18_ftut5")
+ok_button_text = "Select Current Folder"
+mode_overrides_title = false
+file_mode = 2
+access = 2
+root_subfolder = "/storage/emulated/0"
+use_native_dialog = true
+
+[node name="LoadBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
+
+[node name="LoadConfig" type="Button" parent="Content/Menu/Content/HBoxContainer/LoadBG"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+text = "Load Config"
+icon = ExtResource("7_f43jd")
+alignment = 0
+script = ExtResource("13_awpjw")
+
+[node name="LoadConfigWindow" type="FileDialog" parent="Content/Menu/Content/HBoxContainer/LoadBG"]
+title = "Load Config"
+initial_position = 1
+size = Vector2i(1045, 525)
+content_scale_mode = 1
+content_scale_aspect = 4
+content_scale_factor = 1.47
+theme = ExtResource("18_ftut5")
+ok_button_text = "Open"
+mode_overrides_title = false
+file_mode = 0
+access = 2
+root_subfolder = "/storage/emulated/0"
+filters = PackedStringArray("*.cfg")
+use_native_dialog = true
+
+[node name="Divider" type="TextureRect" parent="Content/Menu/Content/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(150, 1.5)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("CurveTexture_cam3k")
+expand_mode = 1
+
+[node name="SettingsBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
+
+[node name="Settings" type="Button" parent="Content/Menu/Content/HBoxContainer/SettingsBG"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+text = "Settings"
+icon = ExtResource("15_540xx")
+alignment = 0
+
+[node name="SceneChangeBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
+
+[node name="ChangeScene" type="Button" parent="Content/Menu/Content/HBoxContainer/SceneChangeBG"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+text = "Change Scene"
+icon = ExtResource("19_a67i8")
+alignment = 0
+
+[node name="RenderBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
+
+[node name="Render" type="Button" parent="Content/Menu/Content/HBoxContainer/RenderBG"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_f6n26")
+text = "Render"
+icon = ExtResource("26_vncxl")
+alignment = 0
+
+[node name="Animation" type="Node" parent="Content/Menu"]
+script = ExtResource("23_l068f")
+
+[node name="Visibility" type="CheckBox" parent="Content"]
+modulate = Color(1, 1, 1, 0.219608)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -56.0
+offset_top = -56.0
+offset_right = 44.0
+offset_bottom = 44.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.565, 0.565)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_entok")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ftut5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_awpjw")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rgx58")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_r1hkk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_j172u")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_540xx")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_jwubb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4uw20")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_sgipk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1i6g0")
+theme_override_icons/checked = ExtResource("15_entok")
+theme_override_icons/unchecked = ExtResource("15_pp1ix")
+
+[node name="OpenConfig" type="TextureButton" parent="Content"]
+modulate = Color(1, 1, 1, 0.505882)
+z_index = 2
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -28.0
+offset_right = 576.0
+offset_bottom = 1327.0
+grow_vertical = 2
+scale = Vector2(0.11, 0.041)
+texture_normal = ExtResource("10_rtc4f")
+texture_pressed = ExtResource("10_rtc4f")
+texture_hover = ExtResource("10_rtc4f")
+texture_disabled = ExtResource("10_rtc4f")
+texture_focused = ExtResource("10_rtc4f")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Temp" type="Control" parent="Content"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Opt" type="PanelContainer" parent="Content/Temp"]
+layout_mode = 0
+theme = ExtResource("4_ox3b3")
+
+[node name="H" type="VBoxContainer" parent="Content/Temp/Opt"]
+texture_filter = 2
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Temp/Opt/H"]
+layout_mode = 2
+text = "t"
+
+[node name="Inp" type="OptionButton" parent="Content/Temp/Opt/H"]
+layout_mode = 2
+selected = 2
+allow_reselect = true
+item_count = 4
+popup/item_0/text = "Exponential "
+popup/item_0/id = 1
+popup/item_1/text = "Reinhart"
+popup/item_1/id = 2
+popup/item_2/text = "Extended Reinhart"
+popup/item_2/id = 3
+popup/item_3/text = "ACES"
+popup/item_3/id = 4
+
+[node name="P" type="PanelContainer" parent="Content/Temp"]
+layout_mode = 0
+theme = ExtResource("4_ox3b3")
+
+[node name="Inp" type="PanelContainer" parent="Content/Temp"]
+layout_mode = 0
+theme = ExtResource("4_ox3b3")
+
+[node name="H" type="VBoxContainer" parent="Content/Temp/Inp"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Temp/Inp/H"]
+layout_mode = 2
+text = "i"
+
+[node name="Inp" type="LineEdit" parent="Content/Temp/Inp/H"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "1.33"
+emoji_menu_enabled = false
+
+[node name="Togg" type="PanelContainer" parent="Content/Temp"]
+layout_mode = 0
+theme = ExtResource("4_ox3b3")
+
+[node name="H" type="VBoxContainer" parent="Content/Temp/Togg"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Temp/Togg/H"]
+layout_mode = 2
+text = "t"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Temp/Togg/H"]
+layout_mode = 2
+
+[node name="T" type="CheckButton" parent="Content/Temp/Togg/H/Mod"]
+layout_mode = 2
+
+[node name="Inp" type="LineEdit" parent="Content/Temp/Togg/H/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.3"
+emoji_menu_enabled = false
+
+[node name="Col" type="PanelContainer" parent="Content/Temp"]
+layout_mode = 0
+theme = ExtResource("4_ox3b3")
+
+[node name="H" type="VBoxContainer" parent="Content/Temp/Col"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Temp/Col/H"]
+layout_mode = 2
+text = "c"
+
+[node name="Mod" type="HBoxContainer" parent="Content/Temp/Col/H"]
+layout_mode = 2
+
+[node name="T" type="CheckButton" parent="Content/Temp/Col/H/Mod"]
+layout_mode = 2
+
+[node name="1" type="VBoxContainer" parent="Content/Temp/Col/H/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Temp/Col/H/Mod/1"]
+custom_minimum_size = Vector2(0, 0.575)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("6_pp1ix")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="ColorPickerButton" parent="Content/Temp/Col/H/Mod/1"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+edit_alpha = false
+
+[node name="2" type="VBoxContainer" parent="Content/Temp/Col/H/Mod"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Content/Temp/Col/H/Mod/2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_entok")
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="ColorPickerButton" parent="Content/Temp/Col/H/Mod/2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "High"
+color = Color(0, 1, 0, 1)
+edit_alpha = false
+
+[connection signal="item_selected" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel/Tonemap/TonemapType" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_tonemap_type_item_selected"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel/Gamma/Gamma" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_gamma_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure/Mod/ExpoToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_expo_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure/Mod/Exposure" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_exposure_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation/Mod/SatToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_sat_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/SaturationPanel/Saturation/Mod/Saturation" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_saturation_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/TintToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_tint_toggle_toggled"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/Low/TintLow" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_tint_low_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TintPanel/Tint/Mod/High/TintHigh" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_tint_high_color_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/SunIntensityPanel/SunIntensity/SunIntensity" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_sun_intensity_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/TorchIntensityPanel/TorchIntensity/TorchIntensity" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_torch_intensity_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/NightBrightnssPanel/NightBrightness/NightBrightness" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_night_brightness_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CaveBrightnessPanel/CaveBrightness/CaveBrightness" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_cave_brightness_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/ShadowIntensPanel/ShadowIntensity/ShadowIntensity" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_shadow_intensity_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/BlinkingTorchPanel/BlinkingTorch/BlinkTorchToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_blink_torch_toggle_toggled"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting/CloudShadowPanel/CloudShadow/CloudShadowToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_cloud_shadow_toggle_toggled"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Morning/TerrColMorning" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_terr_col_morning_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Noon/TerrColNoon" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_terr_col_noon_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainColor/TerrainColPanel/Mod/Night/TerrColNight" to="Content/Config/Container/Scroll/ConfigContainer/Config/TerrainLighting" method="_on_terr_col_night_color_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend/Mod/FogToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_fog_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend/Mod/Fog" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_fog_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/MistDensPanel/MistDensity/MistDensity" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_mist_density_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist/Mod/RainMToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_rain_m_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/RainMistPanel/RainMist/Mod/RainMist" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_rain_mist_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog/Mod/CloudyFogToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_cloudy_fog_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/CloudyFogPanel/CloudyFog/Mod/CloudyFog" to="Content/Config/Container/Scroll/ConfigContainer/Config/Fog" method="_on_cloudy_fog_text_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Zenith/DayZenith" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_day_zenith_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DayColorPanel/DayColor/Mod/Horizon/DayHorizon" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_day_horizon_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Zenith/NightZenith" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_night_zenith_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/NightColorPanel/NightColor/Mod/Horizon/NightHorizon" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_night_horizon_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Zenith/RainZenith" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_rain_zenith_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/RainColorPanel/RainColor/Mod/Horizon/RainHorizon" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_rain_horizon_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Zenith/EndZenith" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_end_zenith_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/EndColorPanel/EndColor/Mod/Horizon/EnHorizon" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_en_horizon_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Zenith/DawnZenith" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_dawn_zenith_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Edge/DawnEdge" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_dawn_edge_color_changed"]
+[connection signal="color_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor/DawnColorPanel/DawnColor/Mod/Horizon/DawnHorizon" to="Content/Config/Container/Scroll/ConfigContainer/Config/SkyColor" method="_on_dawn_horizon_color_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave/Mod/PWaveToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_p_wave_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/PlantWavePanel/PlantWave/Mod/PlantWave" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_plant_wave_text_changed"]
+[connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LWaveToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_l_wave_toggle_toggled"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LanternWave" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_lantern_wave_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel/WaveSpeed/WaveSpeed" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_wave_speed_text_changed"]
+[connection signal="pressed" from="Content/Config/CloseConfig" to="." method="_on_close_config_pressed"]
+[connection signal="pressed" from="Content/Menu/StripeMenu" to="." method="_on_stripe_menu_pressed"]
+[connection signal="pressed" from="Content/Menu/MenuPanel/CrossMenu" to="." method="_on_cross_menu_pressed"]
+[connection signal="pressed" from="Content/Menu/Content/HBoxContainer/SaveLocalBG/SaveLocal" to="Content/Menu/Content/HBoxContainer/SaveLocalBG/SaveLocal" method="_on_pressed"]
+[connection signal="pressed" from="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfig" to="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfig" method="_on_pressed"]
+[connection signal="dir_selected" from="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfigWindow" to="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfig" method="_on_export_config_window_dir_selected"]
+[connection signal="pressed" from="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" to="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" method="_on_pressed"]
+[connection signal="file_selected" from="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfigWindow" to="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" method="_on_load_config_window_file_selected"]
+[connection signal="toggled" from="Content/Visibility" to="." method="_on_visibility_toggled"]
+[connection signal="pressed" from="Content/OpenConfig" to="." method="_on_open_config_pressed"]

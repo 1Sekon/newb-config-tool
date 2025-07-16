@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6n5tulorojt1"]
+
+[ext_resource type="PackedScene" uid="uid://dbj72h7aa23yt" path="res://assets/scenes/overworld.tscn" id="1_slo4m"]
+[ext_resource type="PackedScene" uid="uid://bk2rqli0pgv50" path="res://assets/ui/hud.tscn" id="2_6sgls"]
+[ext_resource type="PackedScene" uid="uid://buidsd0w1k5xm" path="res://assets/scenes/sun_moon.tscn" id="4_u44wh"]
+[ext_resource type="Script" uid="uid://dy7ejfhfevyg3" path="res://assets/scripts/day_time_and_fog_change.gd" id="5_eqalh"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="Overworld" parent="." instance=ExtResource("1_slo4m")]
+script = null
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainUI" parent="CanvasLayer" instance=ExtResource("2_6sgls")]
+metadata/_edit_lock_ = true
+
+[node name="SunMoon" parent="." instance=ExtResource("4_u44wh")]
+transform = Transform3D(0.371045, -0.928615, 0, 0.928615, 0.371045, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("5_eqalh")
