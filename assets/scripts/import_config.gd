@@ -5,6 +5,8 @@ var config = ConfigFile.new()
 func _on_pressed() -> void:
   $"../LoadConfigWindow".visible = true
 
+# iterate through all keys in the specific section
+# to get the value of the key
 func get_config_value(section: String):
   var data = {}
   for key in config.get_section_keys(section):
@@ -16,10 +18,10 @@ func _on_load_config_window_file_selected(path: String) -> void:
   var err = config.load(path)
   
   if err != OK:
-    print("Load config failed, something wrong inside the file!")
+    print("Load config failed: something wrong inside the file")
     return
   elif path.get_extension() != "cfg":
-    print("Load config failed, not a config file!")
+    print("Load config failed: not a config file")
     return
   
   
@@ -91,6 +93,7 @@ func _on_load_config_window_file_selected(path: String) -> void:
   var lanternw_on = wave.EnableLanternWave
   var lantern_wave_val = wave.LanternWave
   var wave_speed = wave.WaveSpeed
+  var wave_range = wave.WaveRange
   
   
   # set the value to global uniform
@@ -152,9 +155,10 @@ func _on_load_config_window_file_selected(path: String) -> void:
   RenderingServer.global_shader_parameter_set(&"ELanternWave", lanternw_on)
   RenderingServer.global_shader_parameter_set(&"LanternWave", lantern_wave_val)
   RenderingServer.global_shader_parameter_set(&"WaveSpeed", wave_speed)
+  RenderingServer.global_shader_parameter_set(&"WaveRange", wave_range)
   
   
-  # update the ui control appearance
+  # update the ui control appearance based on the new loaded value
   # Color Correction
   $"../../../../../Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel/Tonemap/TonemapType".select(tonemap_id-1)
   $"../../../../../Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel/Gamma/Gamma".text = str(gamma_value)
@@ -213,3 +217,4 @@ func _on_load_config_window_file_selected(path: String) -> void:
   $"../../../../../Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LWaveToggle".button_pressed = lanternw_on
   $"../../../../../Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LanternWave".text = str(lantern_wave_val)
   $"../../../../../Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel/WaveSpeed/WaveSpeed".text = str(wave_speed)
+  $"../../../../../Config/Container/Scroll/ConfigContainer/Config/Wave/WaveRangePanel/WaveRange/WaveRange".text = str(wave_range)

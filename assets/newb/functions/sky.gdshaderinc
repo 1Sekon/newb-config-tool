@@ -268,9 +268,9 @@ nl_skycolor nlEndSkyColors(float rainFactor, vec3 FOG_COLOR) {
 nl_skycolor nlOverworldSkyColors(float rainFactor, vec3 FOG_COLOR) {
   nl_skycolor s;
   vec3 fs = getSkyFactors(FOG_COLOR);
-  s.zenith= getZenithCol(rainFactor, FOG_COLOR, fs);
-  s.horizon= getHorizonCol(rainFactor, FOG_COLOR, fs);
-  s.horizonEdge= getHorizonEdgeCol(s.horizon, rainFactor, FOG_COLOR);
+  s.zenith = getZenithCol(rainFactor, FOG_COLOR, fs);
+  s.horizon = getHorizonCol(rainFactor, FOG_COLOR, fs);
+  s.horizonEdge = getHorizonEdgeCol(s.horizon, rainFactor, FOG_COLOR);
   return s;
 }
 

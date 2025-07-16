@@ -5,10 +5,12 @@ extends Control
 @onready var handle = $handle
 
 @onready var n : Array[Node] = [
-   get_node("../../../CanvasLayer/MainUI/Content/Config/Container"),
-   get_node("../../../CanvasLayer/MainUI/Content/Config/Panel"),
-   get_node("../../../CanvasLayer/MainUI/Content/Menu/MenuPanel"),
-   get_node("../../../CanvasLayer/MainUI/Content/Menu/Content"),
+  get_node("../../../CanvasLayer/MainUI/Content/Config/Container"),
+  get_node("../../../CanvasLayer/MainUI/Content/Config/Panel"),
+  get_node("../../../CanvasLayer/MainUI/Content/Menu/MenuPanel"),
+  get_node("../../../CanvasLayer/MainUI/Content/Menu/Content"),
+  get_node("../../../CanvasLayer/MainUI/Content/Settings/SettingsContent"),
+  get_node("../../../CanvasLayer/MainUI/Content/ConfigFilter/CFContent"),
 ]
 
 # Joystick scale is based on screen height default is 0.33 so 33% of screen height
@@ -17,7 +19,7 @@ extends Control
 
 # Joystick finger index
 # In order to support multitouch we need to keep track the index or ID of the fingers on screen
-var joystick_finger_index = 0
+var joystick_finger_index = 1
 
 # Joystick ui size variables these are set in the _ready function
 var joystick_starting_size: float

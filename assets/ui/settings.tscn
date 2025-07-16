@@ -1,13 +1,22 @@
-[gd_scene load_steps=22 format=3 uid="uid://0ox04rpy6fux"]
+[gd_scene load_steps=28 format=3 uid="uid://0ox04rpy6fux"]
 
+[ext_resource type="Shader" uid="uid://bqlasojs0nikt" path="res://assets/shaders/ui_bg_blurr_x.gdshader" id="1_7os70"]
 [ext_resource type="Script" uid="uid://b76y435mlhec8" path="res://assets/scripts/settings_main.gd" id="1_35ma8"]
 [ext_resource type="Texture2D" uid="uid://8n5t5xplk638" path="res://assets/textures/ui/icons/settings.svg" id="1_lu0ab"]
+[ext_resource type="Texture2D" uid="uid://dxpmnmjfojibk" path="res://assets/textures/samples/s_BiomeColor.png" id="1_wsr7u"]
 [ext_resource type="FontFile" uid="uid://b1oefflj30fm8" path="res://assets/fonts/lexendDeca/LexendDeca-SemiBold.ttf" id="2_35ma8"]
+[ext_resource type="Shader" uid="uid://ohak42wfb8dc" path="res://assets/shaders/ui_bg_blurr_y.gdshader" id="2_o77vw"]
 [ext_resource type="Texture2D" uid="uid://mtqq471lwpvf" path="res://assets/textures/ui/icons/cross.svg" id="3_wivku"]
 [ext_resource type="Theme" uid="uid://dlg40arksvk7g" path="res://assets/ui_theme/mainUI.tres" id="5_x1p7l"]
 [ext_resource type="Texture2D" uid="uid://bq567ct5nay8l" path="res://assets/textures/ui/icons/3d.svg" id="6_7os70"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3k5c"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ew23g"]
+shader = ExtResource("1_7os70")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o77vw"]
+shader = ExtResource("2_o77vw")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsr7u"]
 content_margin_left = 2.0
 content_margin_top = 8.0
 content_margin_bottom = 8.0
@@ -24,7 +33,7 @@ corner_radius_bottom_left = 1
 shadow_color = Color(0, 0, 0, 0.146)
 shadow_size = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1p7l"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57ho6"]
 bg_color = Color(0.0976562, 0.0976562, 0.0976562, 1)
 border_width_left = 3
 border_width_top = 3
@@ -39,13 +48,16 @@ shadow_color = Color(0, 0, 0, 0.146)
 shadow_size = 20
 
 [sub_resource type="Theme" id="Theme_7os70"]
-OptionButton/styles/normal = SubResource("StyleBoxFlat_c3k5c")
-PanelContainer/styles/panel = SubResource("StyleBoxFlat_x1p7l")
+OptionButton/styles/normal = SubResource("StyleBoxFlat_wsr7u")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_57ho6")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o77vw"]
 bg_color = Color(0.113281, 0.113281, 0.113281, 1)
 border_width_bottom = 3
 border_color = Color(0.15625, 0.15625, 0.15625, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7tj6"]
+draw_center = false
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wivku"]
 
@@ -57,11 +69,17 @@ border_color = Color(0.15625, 0.15625, 0.15625, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ew23g"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wsr7u"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oj5by"]
+bg_color = Color(0.183594, 0.183594, 0.183594, 1)
+expand_margin_left = 5.0
+expand_margin_right = 5.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57ho6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k7tj6"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7r4n2"]
+bg_color = Color(0.183594, 0.183594, 0.183594, 1)
+expand_margin_left = 5.0
+expand_margin_right = 5.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oj5by"]
 
@@ -85,18 +103,83 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_35ma8")
+mouse_filter = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="BGBlurr" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.121569)
+mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Test" type="TextureRect" parent="BGBlurr"]
+visible = false
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wsr7u")
+
+[node name="BlurrX(unused)" type="ColorRect" parent="BGBlurr"]
+visible = false
+z_index = 9
+material = SubResource("ShaderMaterial_ew23g")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.245)
+
+[node name="BlurrY(unused)" type="ColorRect" parent="BGBlurr"]
+visible = false
+z_index = 9
+material = SubResource("ShaderMaterial_o77vw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.245)
+
+[node name="BlurrXY" type="ColorRect" parent="BGBlurr"]
+z_index = 9
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="SettingsContent" type="Control" parent="."]
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_35ma8")
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsContent"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -104,29 +187,29 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_7os70")
-theme_override_constants/margin_left = 100
+theme_override_constants/margin_left = 200
 theme_override_constants/margin_top = 70
-theme_override_constants/margin_right = 100
+theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 70
 
-[node name="Container" type="PanelContainer" parent="MarginContainer"]
+[node name="Container" type="PanelContainer" parent="SettingsContent/MarginContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Container"]
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContent/MarginContainer/Container"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Container/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer"]
 layout_mode = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/Container/VBoxContainer/VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_o77vw")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer"]
 layout_mode = 2
 
-[node name="Icon" type="TextureRect" parent="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+[node name="Icon" type="TextureRect" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -134,7 +217,7 @@ texture = ExtResource("1_lu0ab")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="Label" type="Label" parent="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_fonts/font = ExtResource("2_35ma8")
@@ -144,43 +227,43 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
 theme_override_constants/margin_right = 5
 
-[node name="CloseButton" type="Button" parent="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer/MarginContainer"]
+[node name="CloseButton" type="Button" parent="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
 theme_override_constants/icon_max_width = 31
-theme_override_styles/focus = SubResource("StyleBoxEmpty_wivku")
+theme_override_styles/focus = SubResource("StyleBoxFlat_k7tj6")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wivku")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_x1p7l")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_7os70")
 theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_o77vw")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ew23g")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_wsr7u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oj5by")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_57ho6")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_k7tj6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7r4n2")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_oj5by")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_7r4n2")
 icon = ExtResource("3_wivku")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Container/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Panel" type="PanelContainer" parent="MarginContainer/Container/VBoxContainer/HBoxContainer"]
+[node name="Panel" type="PanelContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ew23g")
 
-[node name="a" type="VBoxContainer" parent="MarginContainer/Container/VBoxContainer/HBoxContainer/Panel"]
+[node name="a" type="VBoxContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/HBoxContainer/Panel"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="MarginContainer/Container/VBoxContainer/HBoxContainer/Panel/a"]
+[node name="Button" type="Button" parent="SettingsContent/MarginContainer/Container/VBoxContainer/HBoxContainer/Panel/a"]
 layout_mode = 2
 theme = ExtResource("5_x1p7l")
 text = "Render"
@@ -188,8 +271,8 @@ icon = ExtResource("6_7os70")
 flat = true
 alignment = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Container/VBoxContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContent/MarginContainer/Container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[connection signal="pressed" from="MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer/MarginContainer/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="SettingsContent/MarginContainer/Container/VBoxContainer/VBoxContainer/PanelContainer/HBoxContainer/MarginContainer/CloseButton" to="SettingsContent" method="_on_close_button_pressed"]

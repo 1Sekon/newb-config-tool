@@ -8,6 +8,6 @@ func _on_pressed() -> void:
 
 
 func _on_export_config_window_dir_selected(dir: String) -> void:
-  var config_path = dir + "/%s.cfg" % ["test"]
+  var config_path = dir.get_base_dir() + "/%s.cfg" % [dir.get_basename().get_file()]
   cnfg.save_config(config_path)
   print(config_path)

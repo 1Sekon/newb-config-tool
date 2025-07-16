@@ -40,10 +40,6 @@ window/physics_engine="DEFAULT"
 
 common/snap_controls_to_pixels=false
 
-[internationalization]
-
-locale/translation_remaps={}
-
 [rendering]
 
 textures/canvas_textures/default_texture_filter=2
@@ -55,7 +51,7 @@ lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0
 shader_compiler/shader_cache/enabled=false
 driver/depth_prepass/disable_for_vendors="Mali,Adreno,Apple"
 textures/default_filters/anisotropic_filtering_level=0
-scaling_3d/scale=0.5
+scaling_3d/scale=1.0
 environment/glow/upscale_mode=0
 environment/volumetric_fog/use_filter=0
 limits/cluster_builder/max_clustered_elements=16.0
@@ -111,6 +107,14 @@ WaterColor={
 s_SeasonsTexture={
 "type": "sampler2D",
 "value": "res://assets/textures/samples/s_SeasonTexture.png"
+}
+s_BiomeColor={
+"type": "sampler2D",
+"value": "res://assets/textures/samples/s_BiomeColor.png"
+}
+s_NoiseTexture={
+"type": "sampler2D",
+"value": ""
 }
 TonemapType={
 "type": "int",
@@ -174,7 +178,7 @@ BlinkingTorch={
 }
 CloudShadow={
 "type": "bool",
-"value": false
+"value": true
 }
 MorningSunCol={
 "type": "vec3",
@@ -671,12 +675,4 @@ LavaBump={
 LavaNoiseSpeed={
 "type": "float",
 "value": 0.02
-}
-s_BiomeColor={
-"type": "sampler2D",
-"value": "res://assets/textures/samples/s_BiomeColor.png"
-}
-s_NoiseTexture={
-"type": "sampler2D",
-"value": ""
 }

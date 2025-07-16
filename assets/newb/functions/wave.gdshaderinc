@@ -41,7 +41,7 @@ void lanternWave(
 
 void nlWave(
   inout vec3 worldPos, inout vec3 light, float rainFactor, vec2 uv0, vec2 lit, vec3 bPos, vec4 color0, vec3 cPos, vec3 tiledCpos, highp float t, bool isColored, bool isTreeLeaves, bool isPlants, float camDist, sampler2D terrainTex
-) {
+){
 
   if (camDist > WaveRange) {  // only wave nearby (better performance)
     return;
@@ -65,7 +65,7 @@ void nlWave(
 
   // darken farm plants bottom
   light *= isFarmPlant && !isTop ? 0.7 : 1.1;
-  if (uv0.y<0.9306640625 && uv0.y>0.9130859375) {
+  if (uv0.y<0.9306640625 && uv0.y>0.9130859375) { //<--- Short grass uv position
      //make grass bottom more dark depending how deep it is
     light *= mix(isTop ? 1.2 : 1.2 - 1.2*(bPos.y>0.0 ? 1.5-bPos.y : 0.5), 1.0, waveFade);
   }

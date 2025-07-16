@@ -1,20 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://buidsd0w1k5xm"]
+[gd_scene load_steps=4 format=3 uid="uid://buidsd0w1k5xm"]
 
 [ext_resource type="ArrayMesh" uid="uid://wcvnm4ft4rt" path="res://assets/models/SunMoon.obj" id="1_ykyj4"]
 [ext_resource type="Shader" uid="uid://c2tht4b6d35ou" path="res://assets/shaders/SunMoon.gdshader" id="2_vi0ht"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ykyj4"]
-render_priority = 0
-shader = ExtResource("2_vi0ht")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_vi0ht"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6ig0u"]
 render_priority = 0
 shader = ExtResource("2_vi0ht")
 
 [node name="SunMoon" type="Node3D"]
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.00349056, -1.82767e-05, 4.99997, -0.00523596, 0.999986, 0, -0.99998, -0.00523593, -0.017453, 0, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, 5, 0, 1, 0, -1, 0, -2.18557e-07, 0, 0, 0)
+cast_shadow = 0
 mesh = ExtResource("1_ykyj4")
-surface_material_override/0 = SubResource("ShaderMaterial_ykyj4")
-surface_material_override/1 = SubResource("ShaderMaterial_vi0ht")
+surface_material_override/0 = SubResource("ShaderMaterial_6ig0u")
+surface_material_override/1 = SubResource("ShaderMaterial_6ig0u")

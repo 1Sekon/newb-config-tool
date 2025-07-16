@@ -65,6 +65,7 @@ func save_config(dir: String):
   config.set_value("Wave", "EnableLanternWave", wave.lanternw_on)
   config.set_value("Wave", "LanternWave", wave.lantern_wave_val)
   config.set_value("Wave", "WaveSpeed", wave.wave_speed)
+  config.set_value("Wave", "WaveRange", wave.wave_range)
   
   config.save(dir)
 

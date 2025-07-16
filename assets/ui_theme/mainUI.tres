@@ -31,9 +31,7 @@ draw_center = false
 bg_color = Color(1, 1, 1, 0.117647)
 border_color = Color(0.0921631, 0.589844, 0.251576, 1)
 expand_margin_left = 3.0
-expand_margin_top = 4.0
-expand_margin_right = 150.0
-expand_margin_bottom = 11.0
+expand_margin_right = 3.0
 
 [sub_resource type="Image" id="Image_bpd5e"]
 data = {
@@ -1815,9 +1813,7 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t78yq"]
-content_margin_top = 37.0
 bg_color = Color(0.113281, 0.113281, 0.113281, 1)
-expand_margin_left = 150.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t6gf4"]
 content_margin_left = 9.0

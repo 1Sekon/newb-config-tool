@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://bk2rqli0pgv50"]
+[gd_scene load_steps=84 format=3 uid="uid://bk2rqli0pgv50"]
 
 [ext_resource type="Script" uid="uid://bvi0jbv78so1i" path="res://assets/scripts/config_global/color_correction_global.gd" id="1_1tvua"]
 [ext_resource type="Script" uid="uid://bcnblaslwrpit" path="res://assets/scripts/ui_main.gd" id="1_4uhkp"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bltcbm5bmia1x" path="res://assets/textures/ui/icons/save.svg" id="4_7a7ve"]
 [ext_resource type="Script" uid="uid://fwgbl51vg6jh" path="res://assets/scripts/config_global/terrain_lighting_global.gd" id="4_j611y"]
 [ext_resource type="Theme" uid="uid://c6v1rs5naqysl" path="res://assets/ui_theme/config_bg.tres" id="4_ox3b3"]
+[ext_resource type="Script" uid="uid://wp6rus0xrj23" path="res://assets/scripts/ui/filter_config.gd" id="5_cnnpd"]
 [ext_resource type="Script" uid="uid://cc1rgl0y80j1f" path="res://assets/scripts/save_config.gd" id="6_0b578"]
 [ext_resource type="FontFile" uid="uid://cklak6rfbagdk" path="res://assets/fonts/lexendDeca/LexendDeca-Regular.ttf" id="6_pp1ix"]
 [ext_resource type="Texture2D" uid="uid://d3qqh5dgmcjoa" path="res://assets/textures/ui/icons/import_file.svg" id="7_f43jd"]
@@ -28,8 +29,9 @@
 [ext_resource type="Theme" uid="uid://cx5mlmkpjqq8r" path="res://assets/ui_theme/window.tres" id="18_ftut5"]
 [ext_resource type="Texture2D" uid="uid://duha66lh8i8rk" path="res://assets/textures/ui/icons/scene2.svg" id="19_a67i8"]
 [ext_resource type="Script" uid="uid://du7myak0prpq0" path="res://assets/scripts/export_config.gd" id="20_vncxl"]
-[ext_resource type="Script" uid="uid://dsgnetswdxoft" path="res://assets/scripts/ui/animation.gd" id="23_l068f"]
-[ext_resource type="Texture2D" uid="uid://bq567ct5nay8l" path="res://assets/textures/ui/icons/3d.svg" id="26_vncxl"]
+[ext_resource type="Texture2D" uid="uid://vd4hmo7pchti" path="res://assets/textures/ui/icons/render.svg" id="27_cnnpd"]
+[ext_resource type="PackedScene" uid="uid://0ox04rpy6fux" path="res://assets/ui/settings.tscn" id="31_1623r"]
+[ext_resource type="PackedScene" uid="uid://c8t580qbrkkn0" path="res://assets/ui/config_filter.tscn" id="33_t2jln"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgipk"]
 content_margin_left = 10.0
@@ -156,12 +158,135 @@ expand_margin_top = 4.0
 expand_margin_right = 190.0
 expand_margin_bottom = 14.0
 
-[sub_resource type="Curve" id="Curve_1i6g0"]
-_data = [Vector2(0, 0.258427), 0.0, 0.0, 0, 0]
-point_count = 1
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cnnpd"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
 
-[sub_resource type="CurveTexture" id="CurveTexture_cam3k"]
-curve = SubResource("Curve_1i6g0")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8geb5"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xulvo"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qbtp"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwvdh"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3ogp"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5nf24"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yyyu0"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0cfa4"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbxb7"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ulm7"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4dtw"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8k0tv"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55iut"]
+bg_color = Color(1, 1, 1, 0.117647)
+draw_center = false
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2jln"]
+bg_color = Color(1, 1, 1, 0.117647)
+border_color = Color(0.332031, 0.332031, 0.332031, 1)
+expand_margin_left = 3.0
+expand_margin_top = 4.0
+expand_margin_right = 190.0
+expand_margin_bottom = 14.0
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_entok"]
 
@@ -210,7 +335,7 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="Panel" type="PanelContainer" parent="Content/Config"]
-z_index = 10
+z_index = 8
 layout_mode = 0
 offset_right = 515.8
 offset_bottom = 47.0
@@ -245,7 +370,7 @@ uppercase = true
 layout_mode = 2
 theme_override_constants/margin_left = 302
 
-[node name="FilterConfig" type="Button" parent="Content/Config/Panel/HBoxContainer/MarginContainer"]
+[node name="FilterConfig" type="Button" parent="Content/Config/Panel/HBoxContainer/MarginContainer" node_paths=PackedStringArray("cf")]
 layout_mode = 2
 theme_override_constants/icon_max_width = 40
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vncxl")
@@ -260,6 +385,8 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_uka57")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pwvdh")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_j3ogp")
 icon = ExtResource("4_4uhkp")
+script = ExtResource("5_cnnpd")
+cf = NodePath("../../../../../ConfigFilter")
 
 [node name="Container" type="PanelContainer" parent="Content/Config"]
 layout_mode = 1
@@ -678,7 +805,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend"]
 layout_mode = 2
-text = "Fog Blend"
+text = "Fog"
 
 [node name="Mod" type="HBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Fog/FogBlendPanel/FogBlend"]
 layout_mode = 2
@@ -1107,6 +1234,7 @@ text = "0.05"
 emoji_menu_enabled = false
 
 [node name="LanternWavePanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+visible = false
 layout_mode = 2
 theme = ExtResource("4_ox3b3")
 
@@ -1147,6 +1275,23 @@ size_flags_vertical = 4
 text = "2.8"
 emoji_menu_enabled = false
 
+[node name="WaveRangePanel" type="PanelContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave"]
+layout_mode = 2
+theme = ExtResource("4_ox3b3")
+
+[node name="WaveRange" type="VBoxContainer" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveRangePanel"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveRangePanel/WaveRange"]
+layout_mode = 2
+text = "Wave Range"
+
+[node name="WaveRange" type="LineEdit" parent="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveRangePanel/WaveRange"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "13.0"
+emoji_menu_enabled = false
+
 [node name="CloseConfig" type="TextureButton" parent="Content/Config"]
 modulate = Color(1, 1, 1, 0.505882)
 z_index = 2
@@ -1156,7 +1301,7 @@ anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 512.0
 offset_top = -28.0
-offset_right = 547.0
+offset_right = 568.0
 offset_bottom = 28.0
 grow_vertical = 2
 texture_normal = ExtResource("12_l068f")
@@ -1217,7 +1362,7 @@ anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -195.0
 offset_top = 47.0
-offset_bottom = 448.0
+offset_bottom = 405.0
 grow_horizontal = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_540xx")
 
@@ -1254,6 +1399,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_f6n26")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cnnpd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8geb5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xulvo")
 text = "Export Config"
 icon = ExtResource("15_4uw20")
 alignment = 0
@@ -1262,6 +1410,7 @@ cnfg = NodePath("../../SaveLocalBG/SaveLocal")
 
 [node name="ExportConfigWindow" type="FileDialog" parent="Content/Menu/Content/HBoxContainer/ExportBG"]
 auto_translate_mode = 1
+scaling_3d_scale = 0.6
 title = "Save Config"
 initial_position = 1
 size = Vector2i(1045, 525)
@@ -1284,12 +1433,16 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_f6n26")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0qbtp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pwvdh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_j3ogp")
 text = "Load Config"
 icon = ExtResource("7_f43jd")
 alignment = 0
 script = ExtResource("13_awpjw")
 
 [node name="LoadConfigWindow" type="FileDialog" parent="Content/Menu/Content/HBoxContainer/LoadBG"]
+scaling_3d_scale = 0.6
 title = "Load Config"
 initial_position = 1
 size = Vector2i(1045, 525)
@@ -1305,14 +1458,6 @@ root_subfolder = "/storage/emulated/0"
 filters = PackedStringArray("*.cfg")
 use_native_dialog = true
 
-[node name="Divider" type="TextureRect" parent="Content/Menu/Content/HBoxContainer"]
-visible = false
-custom_minimum_size = Vector2(150, 1.5)
-layout_mode = 2
-size_flags_horizontal = 4
-texture = SubResource("CurveTexture_cam3k")
-expand_mode = 1
-
 [node name="SettingsBG" type="PanelContainer" parent="Content/Menu/Content/HBoxContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
@@ -1321,6 +1466,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_f6n26")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5nf24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yyyu0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0cfa4")
 text = "Settings"
 icon = ExtResource("15_540xx")
 alignment = 0
@@ -1333,6 +1481,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_f6n26")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vbxb7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6ulm7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d4dtw")
 text = "Change Scene"
 icon = ExtResource("19_a67i8")
 alignment = 0
@@ -1345,12 +1496,14 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1i6g0")
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("2_f6n26")
-text = "Render"
-icon = ExtResource("26_vncxl")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8k0tv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_55iut")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t2jln")
+text = "(No Name)"
+icon = ExtResource("27_cnnpd")
 alignment = 0
 
 [node name="Animation" type="Node" parent="Content/Menu"]
-script = ExtResource("23_l068f")
 
 [node name="Visibility" type="CheckBox" parent="Content"]
 modulate = Color(1, 1, 1, 0.219608)
@@ -1535,6 +1688,18 @@ text = "High"
 color = Color(0, 1, 0, 1)
 edit_alpha = false
 
+[node name="Settings" parent="Content" instance=ExtResource("31_1623r")]
+visible = false
+layout_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="ConfigFilter" parent="Content" instance=ExtResource("33_t2jln")]
+visible = false
+layout_mode = 1
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="Content/Config/Panel/HBoxContainer/MarginContainer/FilterConfig" to="Content/Config/Panel/HBoxContainer/MarginContainer/FilterConfig" method="_on_pressed"]
 [connection signal="item_selected" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/TonemapPanel/Tonemap/TonemapType" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_tonemap_type_item_selected"]
 [connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/GammaPanel/Gamma/Gamma" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_gamma_text_changed"]
 [connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection/ExposurePanel/Exposure/Mod/ExpoToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/ColorCorrection" method="_on_expo_toggle_toggled"]
@@ -1577,6 +1742,7 @@ edit_alpha = false
 [connection signal="toggled" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LWaveToggle" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_l_wave_toggle_toggled"]
 [connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/LanternWavePanel/LanternWave/Mod/LanternWave" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_lantern_wave_text_changed"]
 [connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveSpeedPanel/WaveSpeed/WaveSpeed" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_wave_speed_text_changed"]
+[connection signal="text_changed" from="Content/Config/Container/Scroll/ConfigContainer/Config/Wave/WaveRangePanel/WaveRange/WaveRange" to="Content/Config/Container/Scroll/ConfigContainer/Config/Wave" method="_on_wave_range_text_changed"]
 [connection signal="pressed" from="Content/Config/CloseConfig" to="." method="_on_close_config_pressed"]
 [connection signal="pressed" from="Content/Menu/StripeMenu" to="." method="_on_stripe_menu_pressed"]
 [connection signal="pressed" from="Content/Menu/MenuPanel/CrossMenu" to="." method="_on_cross_menu_pressed"]
@@ -1585,5 +1751,6 @@ edit_alpha = false
 [connection signal="dir_selected" from="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfigWindow" to="Content/Menu/Content/HBoxContainer/ExportBG/ExportConfig" method="_on_export_config_window_dir_selected"]
 [connection signal="pressed" from="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" to="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" method="_on_pressed"]
 [connection signal="file_selected" from="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfigWindow" to="Content/Menu/Content/HBoxContainer/LoadBG/LoadConfig" method="_on_load_config_window_file_selected"]
+[connection signal="pressed" from="Content/Menu/Content/HBoxContainer/SettingsBG/Settings" to="." method="_on_settings_pressed"]
 [connection signal="toggled" from="Content/Visibility" to="." method="_on_visibility_toggled"]
 [connection signal="pressed" from="Content/OpenConfig" to="." method="_on_open_config_pressed"]

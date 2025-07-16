@@ -40,25 +40,25 @@ vec3 nlLighting(
 
   } else {
     // overworld lighting
-    
+
     float dayFactor = min(dot(FOG_COLOR.rgb, vec3(0.5,0.4,0.4))*(1.0 + 1.9*env.rainFactor), 1.0);
     float nightFactor = 1.0-dayFactor*dayFactor;
     float rainDim = min(FOG_COLOR.g, 0.25)*env.rainFactor;
     float lightIntensity = SunIntensity*(1.0 - rainDim)*(1.0 + NightBrightness*nightFactor);
-    
+
     // min ambient in caves
     light = vec3((1.35+CaveBrightness)*(1.0-uv1.x)*(1.0-uv1.y));
-    
+
     // sky ambient
     light += mix(skycol.horizon, skycol.zenith, 0.5+0.5)*((3.0-2.0)*(1.3 + (4.0*nightFactor) - rainDim));
-    
+
     // shadow cast by top light
     float shadow = step(0.93, uv1.y);
     shadow = max(shadow, (1.0 - ShadowIntensity + (0.6*ShadowIntensity*nightFactor))*lit.y);
     shadow *= shade > 0.8 ? 1.0 : 0.8;
-    
+
     // shadow cast by simple cloud
-    //if(CloudShadow)shadow *= smoothstep(0.6, 0.1, cloudNoise2D(2.0*wPos.xz*Cloud1Scale, t, env.rainFactor));
+    //if(CloudShadow)light *= mix(1.0, 0.0, smoothstep(0.6, 0.1, cloudNoise2D(2.0*wPos.xz*Cloud1Scale, t*4., env.rainFactor)));
 
     // direct light from top
     float dirLight = shadow*(1.0-uv1.x*nightFactor)*lightIntensity;

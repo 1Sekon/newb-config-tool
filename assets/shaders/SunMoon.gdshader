@@ -12,7 +12,7 @@ void vertex() {
   vec3 pos = VERTEX;
   sPos = VERTEX;
 
-  pos.xy *= SunMoonSize*10.0;
+  pos.xy *= SunMoonSize*11.4;
   if(ESunMoonAngle){
     float angle = SunMoonAngle*0.0174533;
     float sinA = sin(angle);

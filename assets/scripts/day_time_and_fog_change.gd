@@ -1,14 +1,22 @@
 @tool
 extends Node3D
 
+var nether_fog : Dictionary = {
+  "wastes": Vector3(0.2, 0.03137254902, 0.03137254902),
+  "warped": Vector3(0.10196078431, 0.01960784314, 0.10196078431),
+  "crimson": Vector3(0.2, 0.01176470588, 0.01176470588),
+  "basalt": Vector3(0.40784313725, 0.37254901961, 0.43921568627),
+}
+
 var fog_color : Dictionary = {
-  "day": Vector3(0.66666666667, 0.81960784314, 0.99607843137), 
+  "day": Vector3(0.67058823529, 0.82352941176, 1.0), 
   "rainDay": Vector3(0.4, 0.4, 0.4), 
   "dawn": Vector3(0.76470588235, 0.38039215686, 0.25490196078), 
   "night": Vector3(0.03921568627, 0.04705882353, 0.0862745098), 
   "rainNight": Vector3(0.02352941176, 0.02352941176, 0.03529411765), 
   "end": Vector3(0.25098039216, 0.0, 0.25098039216),
-  }
+  "nether": nether_fog,
+}
 
 var fog_control : Dictionary = {
   "day": Vector2(0.70980392157, 0.98823529412), 
@@ -26,6 +34,7 @@ var fct : Vector2 = fog_control["day"]
 func _process(delta: float) -> void:
   if not Engine.is_editor_hint():
     rotate_z(delta*0.5)
+  
   var t = rotation.z
   var tdeg = rad_to_deg(t)
   
@@ -43,7 +52,7 @@ func _process(delta: float) -> void:
     fc = lerp(fog_color["dawn"], fog_color["night"], tdeg/-45)
     fct = lerp(fog_control["day"], fog_control["day"], tdeg/-45)
   
-  #set fog color
+  #set the fog color
   RenderingServer.global_shader_parameter_set(&"FogColor", fc)
   
   #set fog control and the distance

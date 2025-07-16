@@ -10,11 +10,11 @@
 [node name="Overworld" parent="." instance=ExtResource("1_slo4m")]
 script = null
 
+[node name="SunMoon" parent="." instance=ExtResource("4_u44wh")]
+transform = Transform3D(0.52559, -0.850738, 0, 0.850738, 0.52559, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("5_eqalh")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="MainUI" parent="CanvasLayer" instance=ExtResource("2_6sgls")]
 metadata/_edit_lock_ = true
-
-[node name="SunMoon" parent="." instance=ExtResource("4_u44wh")]
-transform = Transform3D(0.371045, -0.928615, 0, 0.928615, 0.371045, 0, 0, 0, 1, 0, 0, 0)
-script = ExtResource("5_eqalh")
